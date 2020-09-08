@@ -1,0 +1,159 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is a modified ONE COLUMN version of
+% the following template:
+% 
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Kevin}{Mankowski}{ \urlstyle{same}
+\href{mailto:kevin.mankowski@gatech.edu}{kevin.mankowski@gatech.edu}\space\space|\space\space(703) 939-1134\space\space|\space\space\href{https://github.com/KMankowski}{github.com/KMankowski}
+}
+
+% \href{kevinmankowski.me}{kevinmankowski.me}
+
+\section{Education}
+\runsubsection{Georgia Institute of Technology}
+\descript{| BS Computer Science}
+\location{Aug 2020 - May 2023 | Atlanta, GA}
+\sectionsep
+
+\runsubsection{George Mason University}
+\descript{| BS Computer Science}
+\location{Aug 2019 - May 2020 | Fairfax, VA}
+Cum. GPA: 3.9 / 4.0 \textbullet{}
+Major GPA: 4.0 / 4.0
+\sectionsep
+
+\section{Skills}
+\begin{minipage}[t]{.4\textwidth}
+\subsection{Software}
+\location{Languages:}
+Java \textbullet{} Python \textbullet{} C \textbullet{} HTML/CSS\ \\
+\location{Frameworks:}
+Bootstrap \textbullet{} JavaFX\ \\
+\location{Technologies:}
+Git \textbullet{} Docker \textbullet{} Kubernetes \textbullet{} \LaTeX
+\sectionsep
+\end{minipage}
+\hfill
+\begin{minipage}[t]{.5\textwidth}
+\subsection{Coursework}
+\location{Fall 2020:}
+Objects and Design \textbullet{} Computer Organization\ \\
+\location{Spring 2020:}
+Data Structures \textbullet{} Linear Algebra\ \\
+\location{Fall 2019:}
+Object-Oriented Programming \textbullet{} Essentials of CS
+\end{minipage}
+\sectionsep
+
+\section{Experience}
+
+\runsubsection{Software Development Intern}
+\descript{| Lockheed Martin Corporation}
+\location{Jun 2020 – Aug 2020 | Manassas, VA \textbullet{} Secret Clearance}
+
+\begin{tightemize}
+\item Supported team in the transitioning of applications to a cloud-based microservices architecture.
+\item Researched capabilities and functionalities of Docker, Kubernetes, and cloud storage solutions such as Ceph.
+\item Configured testbeds via Red Hat Enterprise Linux for their implementation and use, documenting concepts and procedures for unit-wide distribution.
+\item Presented weekly internship progress reports to my team of software engineers.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Teaching Assistant}
+\descript{| Object-Oriented Programming}
+\location{Jan 2020 – May 2020 | Fairfax, VA}
+\begin{tightemize}
+\item Resolved questions via online discussion board, aided students during weekly labs, and reviewed all upcoming projects and lab assignments.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Programming Tutor}
+\descript{| Code Ninjas}
+\location{Apr 2019 – Jul 2020 | Gainesville, VA}
+\begin{tightemize}
+\item Mentored children ages 7-14 on foundational programming skills using Scratch and JavaScript.
+\item Planned and led a week-long summer camp on programming with drones.
+\end{tightemize}
+\sectionsep
+
+\section{Projects}
+\runsubsection{Georgia Tech VGDev}
+\descript{| C\#, Unity}
+\begin{tightemize}
+\item Supporting programmer and designer for the semester-long project `Lunacia' during Fall 2020.
+\item Working within a task-driven agile development methodology alongside nearly 50 team members.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{GMU Student-Run Computing}
+\descript{| HTML/CSS}
+\begin{tightemize}
+\item Contributed to software tailored to assist both students and faculty of the University community.
+\item Designed and implemented a dark mode for our largest web application, provided incremental updates to the organization website, and created materials to help orient new members.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Technology Student Association}
+\descript{| HTML/CSS, Bootstrap}
+\begin{tightemize}
+\item Created websites for my high school’s Career \& Technical Education Program,  TSA Chapter, and a fictional band.
+\item Led a team of 3 in the year-long Webmaster competition, eventually being awarded 1\textsuperscript{st} place in Virginia.
+\end{tightemize}
+
+\end{document}  \documentclass[]{article}
